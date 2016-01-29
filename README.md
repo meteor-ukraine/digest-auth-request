@@ -11,20 +11,20 @@ Currently only supports "auth" quality-of-protection type.
 GET request:
 
 ```js
-var url = 'http://example.com/protected-resource';
-		
-// create digest request object
-var getRequest = new digestAuthRequest('GET', url, 'username', 'password');
-		
-// make the request
-getRequest.request(function(data) { 
-  // success callback
-  // do something with the data
-},function(errorCode) { 
-  // error callback
-  // tell user request failed
-});
+Meteor.startup(() => {
+  var url = ' http://ntv.server.net:7888/search.html?part=userstats';
 
+// create digest request object
+
+  var getRequest = new DigestAuthRequest('GET', url, 'user', 'password');
+
+// make the request
+  getRequest.request(function(data) {
+    console.log(data)
+  },function(errorCode) {
+    console.log(errorCode);
+  });
+  
 // make additional GET requests here...
 ```
 POST request:
@@ -41,7 +41,7 @@ postData = JSON.stringify(postData);
 // create new digest request object
 // because method is different
 // otherwise we could re-use the first one
-var postReq = new digestAuthRequest('POST', url, 'username', 'password');
+var postReq = new DigestAuthRequest('POST', url, 'username', 'password');
 
 postReq.request(function(data) { 
   // success callback
@@ -54,3 +54,7 @@ postReq.request(function(data) {
 ### Toggle console logging
 
 Out of the box digestAuthRequest.js has logging turned on so you can debug. Set `loggingOn` to false to disable it.
+
+
+### Packaged and tuned for use in meteor
+by Viktor Nesterenko

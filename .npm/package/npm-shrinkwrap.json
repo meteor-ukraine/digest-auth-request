@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "crypto-js": {
+      "version": "3.1.6"
+    },
+    "xmlhttprequest": {
+      "version": "1.8.0"
+    }
+  }
+}

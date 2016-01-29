@@ -9,7 +9,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inorganik/digest-auth-request.git"
+    "url": "git+https://github.com/meteor-ukraine/digest-auth-request.git"
   },
   "keywords": [
     "digest",
@@ -19,7 +19,7 @@
   "author": "@inorganik",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/inorganik/digest-auth-request/issues"
+    "url": "https://github.com/meteor-ukraine/digest-auth-request.git"
   },
-  "homepage": "https://github.com/inorganik/digest-auth-request#readme"
+  "homepage": "https://github.com/meteor-ukraine/digest-auth-request#README.md"
 }
